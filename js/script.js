@@ -122,7 +122,7 @@ function renderizaMensagens(listaMensagens) {
 	                <p>(${mensagens[i].time})  <strong> ${mensagens[i].from}</strong> para <strong> ${mensagens[i].to}:</strong> ${mensagens[i].text}</p>
 	            </li>
 	        `
-        }else if ((mensagens[i].from == novoUsuario.name || mensagens[i].to === novoUsuario.mane) && mensagens[i].type === "private_message"){//bonus 
+        }else if ((mensagens[i].from == novoUsuario.name || mensagens[i].to === novoUsuario.name) && mensagens[i].type === "private_message"){//bonus 
             ul.innerHTML = ul.innerHTML + `
 	            <li class="back-rosa">
 	                <p>(${mensagens[i].time})  <strong> ${mensagens[i].from}</strong> reservadamente para <strong> ${mensagens[i].to}:</strong> ${mensagens[i].text}</p>
