@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.tela-login{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.tela-login img{
+    width: 130px;
+    height: 92px;
+}
+
+.tela-login p{
+    margin: 80px 0 0;
+}
+
+.tela-login input{
+    width: 261px;
+    height: 54px;
+    border: 1px solid #D7D7D7;
+    margin: 3px 0 30px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    align-items: center;
+    text-align: center
+}
+
+.tela-login button{
+    height: 45px;
+    width: 109px;
+    background: #E7E7E7;
+    border-radius: 9px;
+}
+
+.container{
+    max-width: 375px;
+    width: 100%;
+    background-color: #E5E5E5;
+    margin: 0 auto;
+}
+.header{
+    top: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header, .footer{
+    max-width: 375px;
+    width: 100%;
+    height: 80px;
+    color: #00000099;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.mensagens{
+    width: 100%;
+    margin: 85px 0;
+    background: #E5E5E5;
+    overflow-y: scroll;
+}
+
+.sidebar{
+    width: 259px;
+    height: 100%;
+    font-size: 16px;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.sidebar li, .sidebar .user div{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar img{
+    width: 20px;
+    height: 20px;
+}
+.user{
+    height: 240px;
+}
+
+.user .Titulo{
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0 0 30px;
+    height: 80px;
+}
+
+.user ul {
+    font-weight: 400;
+    height: 120px;
+    overflow-y: scroll;
+}
+
+.sidebar ion-icon{
+    color: #28BB25;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.hide-side-bar{
+    display: none;
+}
+
+
+.visibilidade{
+    height: 192px;
+}
+.visibilidade .Titulo{
+    font-weight: 700;
+    text-align: center;
+    padding-top: 25px;
+    height: 50px;
+}
+
+strong{
+   font-weight: 700; 
+}
+
+.back-cinza{
+    background: #DCDCDC;
+}
+
+.back-branco{
+    background: #FFFFFF;
+}
+
+.back-rosa{
+    background: #FFDEDE;
+
+}
+
+li{
+    margin: 3px;
+    padding: 10px 0;
+    border-radius: 2px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.messagens li p{
+    width: 375px;
+}
+
+img{
+    margin: 0 12px;
+}
+
+.header img:nth-child(1){
+    width: 75px;
+    height: 53px;    
+}
+
+.header img:nth-child(2){
+    width: 42px;
+    height: 30px;
+}
+
+.footer{
+    bottom: 0;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.footer input{
+    padding: 10px 2px;
+    width: 290px;
+    border: none;
+}
+
+.footer input::placeholder{
+    color: #000000;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer img{
+    width: 26px;
+    height: 26px;
+
+}
+
+.footer div{
+    margin-left: 10px;
+}

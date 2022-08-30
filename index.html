@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tela-login">
+      <img  onclick="hideSideBar()" src="./img/logo.png" alt="logo" />
+      <P></P>
+      <input type="text" placeholder="Digite seu nome">
+      <button onclick="entrar()">Entrar</button>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <img  onclick="hideSideBar()" src="./img/logo.png" alt="logo" />
+        <img onclick="showSideBar()" src="./img/VectorHead.png" alt="icon" />
+      </div>
+      <div class="mensagens"  onclick="hideSideBar()">
+        <ul>
+        </ul>
+      </div>
+      <div class="sidebar hide-side-bar">
+        <div class="user">
+          <div class="Titulo"><strong>Escolha um contato<br/>
+          para enviar mensagem:</strong> </div>
+          <div class="selecionado" onclick="contact(this)"><p><img src="./img/VectorHead.png" alt="icon" /><span>Todos</p></span><ion-icon name="checkmark-sharp"></ion-icon></div>
+          <ul>
+          </ul>
+        </div>
+        <div class="visibilidade">
+          <div class="Titulo"><strong> Escolha a visibilidade:</strong> </div>
+          <ul>          
+          <li onclick="visible(this)"><p><img src="./img/publico.png" alt=""><span>Público</span></p><ion-icon class="hide" name="checkmark-sharp"></ion-icon></li>
+          <li onclick="visible(this)"><p><img src="./img/reservado.png" alt=""><span>Reservadamente</span></p><ion-icon class="hide" name="checkmark-sharp"></ion-icon></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer" onclick="hideSideBar()">
+        <div>
+          <input type="text" class="caixa-mensagem" placeholder="Escreva aqui...">
+          <p></p>
+        </div>
+        <img src="./img/VectorFoot.png" alt="Enviar" onclick="enviarMensagem()" />
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
